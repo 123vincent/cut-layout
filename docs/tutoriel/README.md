@@ -379,7 +379,7 @@ Les décimales s'écrivent avec un point ou une virgule.
 
 ![À propos](img/a_propos.png)
 
-Chaque PDF produit porte aussi la version qui l'a créé, dans ses propriétés : dans le lecteur PDF, **Fichier > Propriétés**, champ « Application » ou « Créateur », par exemple `CutLayout 0.0.1`.
+Chaque PDF produit porte aussi la version qui l'a créé, dans ses propriétés : dans le lecteur PDF, **Fichier > Propriétés**, champ « Application » ou « Créateur », par exemple `CutLayout 1.0.0`.
 
 ## 15. Ce que CutLayout lit dans un patron Seamly2D
 

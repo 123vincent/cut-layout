@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cut-layout"
-version = "0.0.1"
+version = "1.0.0"
 description = "Plan de coupe imprimable 1:1 (PDF mosaïque) pour patrons Seamly2D (.sm2d + .smis)"
 readme = "README.md"
 license = "MIT"
