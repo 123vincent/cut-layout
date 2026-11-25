@@ -73,7 +73,7 @@ Construire l'application portable (sur chaque système visé : Windows, macOS ou
 .venv\Scripts\pytest
 ```
 
-Les tests utilisent l'exemple de [`samples/`](samples/) : mon patron de base buste et manche homme, avec des mesures relevées dans un tableau de tailles de prêt-à-porter. Ce patron a servi à valider le calcul de la géométrie contre Seamly2D ([note de validation](docs/NOTE_validation_geometrie.md)).
+Les tests utilisent l'exemple de [`samples/`](samples/) : mon patron de base buste et manche homme, avec des mesures relevées dans un tableau de tailles de prêt-à-porter. Sa construction pas à pas dans Seamly2D est décrite dans un [tutoriel dédié](docs/patron_seamly2d/README.md). Ce patron a servi à valider le calcul de la géométrie contre Seamly2D ([note de validation](docs/NOTE_validation_geometrie.md)).
 
 ## Technique
 
