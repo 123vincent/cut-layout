@@ -1,0 +1,758 @@
+# Translations template for CutLayout.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the CutLayout project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CutLayout VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-25 12:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#. TRANSLATORS: strftime date format of the test page
+#, python-format
+msgid "%Y-%m-%d %H:%M"
+msgstr ""
+
+msgid "&About CutLayout…"
+msgstr ""
+
+msgid "&Add pieces…"
+msgstr ""
+
+msgid "&Dark theme"
+msgstr ""
+
+msgid "&Edit"
+msgstr ""
+
+msgid "&Export PDF…"
+msgstr ""
+
+msgid "&File"
+msgstr ""
+
+msgid "&Help"
+msgstr ""
+
+msgid "&Language"
+msgstr ""
+
+msgid "&Open a pattern…"
+msgstr ""
+
+msgid "&Page setup…"
+msgstr ""
+
+msgid "&Piece"
+msgstr ""
+
+msgid "&Preferences…"
+msgstr ""
+
+msgid "&Properties…"
+msgstr ""
+
+msgid "&Quit"
+msgstr ""
+
+#. TRANSLATORS: prefix of the menu entry, followed by the name of the action
+msgid "&Redo"
+msgstr ""
+
+msgid "&Reload preferences"
+msgstr ""
+
+msgid "&Remove from layout"
+msgstr ""
+
+msgid "&Save the cutting layout"
+msgstr ""
+
+msgid "&Show all"
+msgstr ""
+
+#. TRANSLATORS: prefix of the menu entry, followed by the name of the action
+#. (e.g. "Undo Move Demi-dos")
+msgid "&Undo"
+msgstr ""
+
+msgid "&View"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"1. Print at 100 % (“Actual size”), without “Fit to page”.\n"
+"2. Measure the rulers (x: {x} mm, y: {y} mm) or the cutting frame\n"
+"    ({frame}, between the dashed lines): the longest length is the most "
+"accurate.\n"
+"3. The dashed cutting frame must be printed entirely, on all four sides.\n"
+"4. On each edge, note the smallest line printed entirely (2 to 6 mm from "
+"the edge):\n"
+"    this is the non-printable area on that side. Set print_margin_mm to "
+"at least the\n"
+"    largest of the four values, and below the assembly margin.\n"
+"5. Scale error measured on a page WITHOUT correction: enter the expected "
+"and measured\n"
+"    lengths in the [printer] section of the preferences (File > "
+"Preferences)."
+msgstr ""
+
+msgid ""
+"A T mark is drawn at each checked node: its stem starts on the node, "
+"perpendicular to the outline, towards the inside of the piece."
+msgstr ""
+
+msgid "About CutLayout"
+msgstr ""
+
+#, python-brace-format
+msgid "Add {names}"
+msgstr ""
+
+msgid "Also use as default for new layouts"
+msgstr ""
+
+msgid "Assembly margin (cutting frame)"
+msgstr ""
+
+msgid ""
+"Assembly margin, in mm: from the sheet edge to the cutting frame (dashed "
+"line).\n"
+"Sheets are cut along this frame and butted together. Default: 10"
+msgstr ""
+
+msgid "Assembly plan"
+msgstr ""
+
+msgid "Automatic (system language)"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Bounding box on the layout: x {x0} to {x1} cm, y {y0} to {y1} cm ({w} × "
+"{h} cm)."
+msgstr ""
+
+#, python-brace-format
+msgid "Cannot read the measurements path: {error}"
+msgstr ""
+
+msgid "Cannot write the file:"
+msgstr ""
+
+msgid "Centroid (area)"
+msgstr ""
+
+#, python-brace-format
+msgid "Change the properties of {name}"
+msgstr ""
+
+msgid "Check the pieces to import (net outlines, without seam allowance):"
+msgstr ""
+
+msgid "Choose another…"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+#, python-brace-format
+msgid "Configuration copied from {path}"
+msgstr ""
+
+msgid "Configuration not applied:"
+msgstr ""
+
+#, python-brace-format
+msgid "Current pieces: {rows} × {cols} = {count} sheet."
+msgid_plural "Current pieces: {rows} × {cols} = {count} sheets."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Custom"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Custom format only (format = custom): sheet width and height, in mm,\n"
+"from {min} to {max}. The short side is the width in portrait."
+msgstr ""
+
+msgid "Custom size (width × height)"
+msgstr ""
+
+msgid ""
+"Cut each sheet along its dashed frame, then join the corners bearing the "
+"same letter."
+msgstr ""
+
+msgid ""
+"CutLayout preferences\n"
+"After editing: in the application, File > Reload preferences (F5).\n"
+"Lines starting with # are comments."
+msgstr ""
+
+#, python-brace-format
+msgid "CutLayout — {pattern}  (measurements: {measurements})"
+msgstr ""
+
+#, python-brace-format
+msgid "Cutting layout ({pattern})"
+msgstr ""
+
+#, python-brace-format
+msgid "Cutting layout saved: {path}"
+msgstr ""
+
+#, python-brace-format
+msgid "Cutting layout — {name}"
+msgstr ""
+
+msgid "Default values not saved:"
+msgstr ""
+
+msgid "Default values used."
+msgstr ""
+
+#, python-brace-format
+msgid "Empty pages omitted: {omitted}."
+msgstr ""
+
+msgid "Export PDF"
+msgstr ""
+
+msgid "First page: assembly plan (reduced, not to scale)."
+msgstr ""
+
+msgid "Flipping is forbidden for this piece in the pattern (Seamly2D)."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Format {sheet} · assembly margin {assembly} mm · print margin set to "
+"{print} mm · {date}"
+msgstr ""
+
+msgid "Import failed"
+msgstr ""
+
+msgid "Individual measurements (*.smis)"
+msgstr ""
+
+#, python-brace-format
+msgid "Interface language: {choices}  (auto = system language; restart required)"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Language not saved:"
+msgstr ""
+
+#, python-brace-format
+msgid "Long side of the paper: {length} mm ruler (y)"
+msgstr ""
+
+msgid "Marked nodes (T)"
+msgstr ""
+
+msgid "Marks removed:"
+msgstr ""
+
+msgid "Measurements"
+msgstr ""
+
+msgid "Measurements file"
+msgstr ""
+
+msgid "Mirror"
+msgstr ""
+
+msgid "Mirror (vertical axis through the reference point)"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Modified since the cutting layout was saved:\n"
+"{files}\n"
+"\n"
+"The pieces will be recomputed from the current files, at the saved "
+"positions. Check them (overlaps are shown in colour).\n"
+"\n"
+"Open anyway?"
+msgstr ""
+
+#, python-brace-format
+msgid "Move {name}"
+msgstr ""
+
+msgid "No piece on the layout."
+msgstr ""
+
+#, python-brace-format
+msgid "Node {name}"
+msgstr ""
+
+msgid "OUTSIDE THE LAYOUT (negative x or y)"
+msgstr ""
+
+#, python-brace-format
+msgid "OVERLAPS {names}"
+msgstr ""
+
+msgid "Open a Seamly2D pattern"
+msgstr ""
+
+msgid "Open a cutting &layout…"
+msgstr ""
+
+msgid "Open a cutting layout"
+msgstr ""
+
+msgid "Open a pattern"
+msgstr ""
+
+msgid "Open the PDF"
+msgstr ""
+
+msgid "Orientation"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Overlapping pieces: {names}\n"
+"\n"
+"Export anyway?"
+msgstr ""
+
+#. TRANSLATORS: menu of the menu bar; its mnemonic must differ from File, Edit,
+#. Piece, View
+msgid "Page &setup"
+msgstr ""
+
+msgid "Page setup"
+msgstr ""
+
+msgid "Part of the piece is outside the layout (negative x or y)."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Piece(s) partly outside the layout (negative x or y): {names}\n"
+"The part outside the layout will not be printed.\n"
+"\n"
+"Export anyway?"
+msgstr ""
+
+msgid "Pieces not placed:"
+msgstr ""
+
+msgid "Pieces to import"
+msgstr ""
+
+#, python-brace-format
+msgid "Preferences: {path}"
+msgstr ""
+
+msgid "Print at 100 % (actual size)."
+msgstr ""
+
+msgid "Print margin (printer)"
+msgstr ""
+
+msgid "Print margin not applied to this layout:"
+msgstr ""
+
+msgid "Print margin of the preferences not applied to this layout:"
+msgstr ""
+
+msgid ""
+"Print margin, in mm: non-printable area of the printer, from the edge.\n"
+"Must be smaller than the assembly margin. Default: 5 (measure it with the"
+" test page)"
+msgstr ""
+
+msgid "Printable 1:1 cutting layout for Seamly2D patterns."
+msgstr ""
+
+#, python-brace-format
+msgid "Printed with: {correction}"
+msgstr ""
+
+msgid "Printer &test page (without correction)…"
+msgstr ""
+
+msgid ""
+"Printer scale correction. Measure on a test page printed WITHOUT "
+"correction\n"
+"(Page setup > Printer test page, without correction), then enter for each"
+" axis\n"
+"the expected length and the measured length, in mm:\n"
+"  x = short side of the paper, y = long side of the paper (in portrait "
+"and landscape).\n"
+"  Possible lengths: rulers (180 in x, 260 in y) or the cutting frame\n"
+"  (A4: 190 in x, 277 in y). The longest length gives the most accurate "
+"correction.\n"
+"Expected = measured: no correction. Correction limited to ±5 %."
+msgstr ""
+
+msgid "Printer test page"
+msgstr ""
+
+msgid "Printer test page (with &correction)…"
+msgstr ""
+
+msgid "Printer test page — CutLayout"
+msgstr ""
+
+#, python-brace-format
+msgid "Printer: {correction}."
+msgstr ""
+
+msgid "Properties"
+msgstr ""
+
+#, python-brace-format
+msgid "Properties — {name}"
+msgstr ""
+
+msgid "Quit"
+msgstr ""
+
+msgid "Reference point"
+msgstr ""
+
+msgid "Remove the pieces already imported from the layout?"
+msgstr ""
+
+#, python-brace-format
+msgid "Remove {names}"
+msgstr ""
+
+msgid "Rotation (counterclockwise +)"
+msgstr ""
+
+#. TRANSLATORS: page mark printed on each sheet, R = row, C = column (French: L
+#. = ligne)
+#, python-brace-format
+msgid "R{row}-C{col}"
+msgstr ""
+
+msgid "Save the cutting layout"
+msgstr ""
+
+msgid "Save the cutting layout &as…"
+msgstr ""
+
+#, python-brace-format
+msgid "Scale 1:{ratio} — do not measure on this page"
+msgstr ""
+
+#, python-brace-format
+msgid "Screen theme: {choices}  (the PDF is always black on white)"
+msgstr ""
+
+msgid "Seamly2D pattern (*.sm2d)"
+msgstr ""
+
+msgid "Select a piece (click), or double-click it."
+msgstr ""
+
+msgid "Sheet format"
+msgstr ""
+
+#, python-brace-format
+msgid "Sheet format: {choices}"
+msgstr ""
+
+#, python-brace-format
+msgid "Sheet orientation: {choices}"
+msgstr ""
+
+#, python-brace-format
+msgid "Sheet {W} × {H} cm, cutting frame {w} × {h} cm."
+msgstr ""
+
+#, python-brace-format
+msgid "Short side of the paper: {length} mm ruler (x)"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Test page {sheet} saved ({correction}).\n"
+"\n"
+"Print at 100 % (actual size), then follow the instructions on the page."
+msgstr ""
+
+msgid "The cutting layout has unsaved changes. Save them?"
+msgstr ""
+
+msgid "The language will change at the next start."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"The measurements file declared by the pattern was not found:\n"
+"{path}\n"
+"\n"
+"Choose the .smis file to use."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"The pattern uses the measurements:\n"
+"{path}\n"
+"\n"
+"Use this file?"
+msgstr ""
+
+msgid "Theme applied but not saved:"
+msgstr ""
+
+msgid "Unit"
+msgstr ""
+
+msgid "Use"
+msgstr ""
+
+#, python-brace-format
+msgid "[{block}] curve {object}: unsupported type {type!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "[{block}] element <{tag}> {object}, type {type!r}: not supported"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"[{block}] piece {piece!r}: unsupported node attribute(s) {attributes} "
+"(effect on the outline UNKNOWN)"
+msgstr ""
+
+#, python-brace-format
+msgid "[{block}] piece {piece!r}: unsupported node type {type!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "[{block}] point {object}: unsupported type {type!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "[{block}] {object}: unknown function {function!r} in {formula!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "[{section}] unknown key(s): {names} (known: {known})"
+msgstr ""
+
+msgid "already imported"
+msgstr ""
+
+msgid "assembly margin too large for the sheet format"
+msgstr ""
+
+#, python-brace-format
+msgid "cannot compute the pattern: {error_type}: {error}"
+msgstr ""
+
+#, python-brace-format
+msgid "cell {label} outside the {rows} × {cols} grid"
+msgstr ""
+
+msgid "centroid"
+msgstr ""
+
+#, python-brace-format
+msgid "custom format: each side must be between {min} and {max} mm"
+msgstr ""
+
+#, python-brace-format
+msgid "custom {w} × {h} mm {orientation}"
+msgstr ""
+
+#. TRANSLATORS: suffix of the exported PDF file name, no spaces
+msgid "cutting_layout"
+msgstr ""
+
+#, python-brace-format
+msgid "different units: pattern {pattern!r}, measurements {measurements!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "duplicate piece name: {name!r}"
+msgstr ""
+
+msgid "file(s) not found:"
+msgstr ""
+
+#, python-brace-format
+msgid "invalid cutting layout file: {error}"
+msgstr ""
+
+msgid "landscape"
+msgstr ""
+
+msgid "mirrored"
+msgstr ""
+
+msgid "no scale correction"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "on fold"
+msgstr ""
+
+msgid "portrait"
+msgstr ""
+
+#, python-brace-format
+msgid "scale correction x × {fx}, y × {fy}"
+msgstr ""
+
+#. TRANSLATORS: parts of the test page file name, no spaces
+msgid "test_page"
+msgstr ""
+
+msgid "the grid needs at least one row and one column"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"the print margin ({print} mm) must be smaller than the assembly margin "
+"({assembly} mm)"
+msgstr ""
+
+msgid "the print margin cannot be negative"
+msgstr ""
+
+#, python-brace-format
+msgid "unknown format: {value!r} (possible: {choices})"
+msgstr ""
+
+#, python-brace-format
+msgid "unknown node for {piece!r}: {node!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "unknown orientation: {value!r} (possible: {choices})"
+msgstr ""
+
+#, python-brace-format
+msgid "unknown reference point for {piece!r}: {ref!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "unknown section(s): {names} (known: {known})"
+msgstr ""
+
+#, python-brace-format
+msgid "unreadable XML file: {error}"
+msgstr ""
+
+#, python-brace-format
+msgid "unreadable cutting layout file: {error}"
+msgstr ""
+
+msgid "unsupported content:"
+msgstr ""
+
+#, python-brace-format
+msgid "unsupported cutting layout file version: {version!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "unsupported unit: {unit!r} (supported: {supported})"
+msgstr ""
+
+#, python-brace-format
+msgid "variable {name}: unknown function {function!r} in {formula!r}"
+msgstr ""
+
+msgid "with_correction"
+msgstr ""
+
+msgid "without_correction"
+msgstr ""
+
+msgid "x from the origin"
+msgstr ""
+
+msgid "y from the origin"
+msgstr ""
+
+msgid "zero-area polygon: centroid undefined"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"{axis} correction of {percent} %: beyond ±{limit} %, check the lengths "
+"entered"
+msgstr ""
+
+#, python-brace-format
+msgid "{key}: must be positive ({value})"
+msgstr ""
+
+#, python-brace-format
+msgid "{key}: number expected, got {value!r}"
+msgstr ""
+
+#, python-brace-format
+msgid "{key}: unknown value {value!r} (possible: {choices})"
+msgstr ""
+
+#, python-brace-format
+msgid "{name}   ({width} × {height} cm)"
+msgstr ""
+
+#, python-brace-format
+msgid "{name}: marked node(s) no longer in the pattern: {nodes}"
+msgstr ""
+
+#, python-brace-format
+msgid "{name}: no longer in the pattern"
+msgstr ""
+
+#, python-brace-format
+msgid "{name}: {width} × {height} cm"
+msgstr ""
+
+#, python-brace-format
+msgid "{n} page {sheet} exported, row by row from {first}."
+msgid_plural "{n} pages {sheet} exported, row by row from {first}."
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-brace-format
+msgid "{path}: unreadable file: {error}"
+msgstr ""
+
+#, python-brace-format
+msgid "{ref} at ({x}; {y}) cm, {angle}"
+msgstr ""
+
+#, python-brace-format
+msgid "{rows} × {cols} = {count} sheet {sheet} (frame {w} × {h} cm)"
+msgid_plural "{rows} × {cols} = {count} sheets {sheet} (frame {w} × {h} cm)"
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-brace-format
+msgid "{rows} × {cols} sheets {sheet}; grey: empty sheet, not printed."
+msgstr ""
+
+#, python-brace-format
+msgid "{value} mm — set in File > Preferences"
+msgstr ""
+

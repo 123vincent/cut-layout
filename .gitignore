@@ -1,0 +1,38 @@
+# Environnement
+.venv/
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.idea/
+
+# Fichiers de travail (sauvegardés à part, dépôt public)
+docs/formats_import.md
+CLAUDE.md
+CONTEXT*.md
+PROMPT*.md
+
+# Patrons, mesures et plans de coupe de l'utilisateur
+# (les mesures sont des données personnelles : seuls les exemples publiés ci-dessous sont suivis)
+*.sm2d
+*.smis
+*.cutl
+*.pdc
+samples/*
+!samples/patron.sm2d
+!samples/mesures.smis
+!docs/tutoriel/demo/*.sm2d
+!docs/tutoriel/demo/*.smis
+output/
+
+# PDF et photos d'essais à la racine
+/*.pdf
+/*.jpg
+/*.JPG
+
+# Build PyInstaller (pyinstaller_build.py)
+pyinstaller_build/
+pyinstaller_dist/
+pyinstaller_build_logs.txt
+pyinstaller_version_info.txt

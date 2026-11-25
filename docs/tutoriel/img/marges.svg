@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <!-- Schéma des marges d'une feuille du plan de coupe (échelle non respectée). -->
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+  <!-- feuille -->
+  <rect x="30" y="20" width="250" height="350" fill="#f3f3f3" stroke="#333" stroke-width="1.5"/>
+  <!-- zone imprimable (dans la marge d'impression) -->
+  <rect x="48" y="38" width="214" height="314" fill="#ffffff" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+  <!-- cadre de coupe (marge d'assemblage) -->
+  <rect x="70" y="60" width="170" height="270" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="7 5"/>
+  <!-- contour d'une pièce : continue au-delà du cadre jusqu'à la zone imprimable -->
+  <path d="M 48 250 C 120 240 170 170 180 38" fill="none" stroke="#1f4e79" stroke-width="2.2"/>
+  <!-- lettres de coin et repère de feuille -->
+  <text x="75" y="74" font-weight="bold" font-size="12">A</text>
+  <text x="227" y="74" font-weight="bold" font-size="12">B</text>
+  <text x="75" y="325" font-weight="bold" font-size="12">C</text>
+  <text x="227" y="325" font-weight="bold" font-size="12">D</text>
+  <text x="74" y="345" font-weight="bold" font-size="10">L2-C1</text>
+  <!-- cotes des marges -->
+  <line x1="30" y1="290" x2="48" y2="290" stroke="#c0504d" stroke-width="1.2"/>
+  <line x1="30" y1="300" x2="70" y2="300" stroke="#2e7d32" stroke-width="1.2"/>
+  <!-- légendes -->
+  <g stroke="#666" stroke-width="0.8">
+    <line x1="280" y1="40" x2="330" y2="40"/>
+    <line x1="262" y1="90" x2="330" y2="90"/>
+    <line x1="240" y1="140" x2="330" y2="140"/>
+    <line x1="179" y1="50" x2="330" y2="190"/>
+    <line x1="238" y1="320" x2="330" y2="250"/>
+    <line x1="110" y1="345" x2="330" y2="300"/>
+  </g>
+  <text x="336" y="44">Bord de la feuille</text>
+  <text x="336" y="86">Zone imprimable : à l'intérieur de la</text>
+  <text x="336" y="102"><tspan fill="#c0504d" font-weight="bold">marge d'impression</tspan> (5 mm, imprimante)</text>
+  <text x="336" y="136">Cadre de coupe en pointillés :</text>
+  <text x="336" y="152"><tspan fill="#2e7d32" font-weight="bold">marge d'assemblage</tspan> (10 mm, plan)</text>
+  <text x="336" y="186">Le contour continue au-delà du cadre,</text>
+  <text x="336" y="202">jusqu'à la zone imprimable : il aide à</text>
+  <text x="336" y="218">aligner les feuilles voisines</text>
+  <text x="336" y="244">Lettres de coin : les coins de même</text>
+  <text x="336" y="260">lettre se rejoignent à l'assemblage</text>
+  <text x="336" y="294">Repère de la feuille (ligne-colonne),</text>
+  <text x="336" y="310">imprimé dans la bande du bas</text>
+  <text x="30" y="392" fill="#666" font-size="11">Échelle non respectée : les marges sont agrandies pour la lisibilité.</text>
+</svg>

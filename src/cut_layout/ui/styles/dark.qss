@@ -1,0 +1,105 @@
+/* Thème sombre — feuille de style Qt (syntaxe proche du CSS).
+   Couleurs de la scène (pièces, grille) : voir ui/theme.py. */
+
+QWidget {
+    background-color: #2b2d30;
+    color: #dfe1e5;
+    selection-background-color: #2f65ca;
+    selection-color: #ffffff;
+}
+
+QMainWindow, QDialog {
+    background-color: #2b2d30;
+}
+
+QMenuBar {
+    background-color: #2b2d30;
+}
+QMenuBar::item:selected, QMenu::item:selected {
+    background-color: #3d4045;
+}
+QMenu {
+    background-color: #2b2d30;
+    border: 1px solid #45484d;
+}
+QMenu::item:disabled {
+    color: #6f737a;
+}
+QMenu::separator {
+    height: 1px;
+    background: #45484d;
+    margin: 4px 8px;
+}
+
+QStatusBar {
+    background-color: #2b2d30;
+    color: #b8bcc2;
+}
+
+QGraphicsView {
+    border: none;
+}
+
+QLineEdit, QDoubleSpinBox, QSpinBox, QComboBox, QListWidget {
+    background-color: #1e1f22;
+    border: 1px solid #45484d;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+QLineEdit:focus, QDoubleSpinBox:focus, QSpinBox:focus, QComboBox:focus {
+    border-color: #3574f0;
+}
+QComboBox QAbstractItemView {
+    background-color: #1e1f22;
+    border: 1px solid #45484d;
+}
+
+/* Cases à cocher (liste des pièces, cases isolées, menus).
+   {styles} est remplacé au chargement par le dossier de ce fichier. */
+QListWidget::indicator, QCheckBox::indicator, QMenu::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #9aa0a8;
+    border-radius: 3px;
+    background-color: #1e1f22;
+}
+QListWidget::indicator:hover, QCheckBox::indicator:hover {
+    border-color: #3574f0;
+}
+QListWidget::indicator:checked, QCheckBox::indicator:checked, QMenu::indicator:checked {
+    background-color: #3574f0;
+    border-color: #3574f0;
+    image: url({styles}/check.svg);
+}
+QListWidget::indicator:disabled, QCheckBox::indicator:disabled {
+    border-color: #4e5157;
+    background-color: #2b2d30;
+}
+QListWidget::item {
+    padding: 4px 2px;
+}
+QListWidget::item:disabled {
+    color: #6f737a;
+}
+
+QPushButton {
+    background-color: #3c3f44;
+    border: 1px solid #4e5157;
+    border-radius: 3px;
+    padding: 4px 12px;
+}
+QPushButton:hover {
+    background-color: #464a50;
+}
+QPushButton:pressed {
+    background-color: #2f65ca;
+}
+QPushButton:default {
+    border-color: #3574f0;
+}
+
+QToolTip {
+    background-color: #3c3f44;
+    color: #dfe1e5;
+    border: 1px solid #4e5157;
+}

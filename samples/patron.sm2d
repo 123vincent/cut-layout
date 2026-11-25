@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v2026.11.16.133 (https://seamly.io).-->
+    <version>0.7.6</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements>../mesures/Individuel/VincentB_dec2026.smis</measurements>
+    <variables>
+        <variable description="Aisance totale sur le tour de poitrine" formula="6" name="#ais_poitrine"/>
+        <variable description="Aisance sur chaque demi-carrure, dos et devant" formula="0.5" name="#ais_carrure"/>
+        <variable description="Abaissement du fond d'emmanchure" formula="1.5" name="#ais_emm"/>
+        <variable description="Aisance totale au poignet" formula="0" name="#ais_poignet"/>
+        <variable description="Aisance totale au bassin" formula="6" name="#ais_bassin"/>
+        <variable description="Pente d'épaule, modifiable sans toucher aux mesures (degrés)" formula="shoulder_slope_neck_side_angle" name="#pente_epaule"/>
+        <variable description="Surlongueur de l'épaule dos, résorbée à la couture (0 en jersey)" formula="0" name="#embu_dos"/>
+        <variable description="Correction de largeur d'encolure" formula="0.6" name="#corr_cou"/>
+        <variable description="Hauteur du point d'encolure devant au-dessus du niveau de A" formula="1" name="#bascule_dev"/>
+        <variable description="Supplément de profondeur d'encolure devant" formula="1" name="#creux_dev"/>
+        <variable description="Diviseur de l'emmanchure donnant la hauteur de tête de manche" formula="3.5" name="#div_tete"/>
+        <variable description="Coefficient qui rend la tête de manche dos égale à l'emmanchure dos" formula="0.9646" name="#k_tete_dos"/>
+        <variable description="Coefficient qui rend la tête de manche devant égale à l'emmanchure devant" formula="0.9516" name="#k_tete_dev"/>
+        <variable description="Longueur de la manche courte, du sommet M au bas" formula="22" name="#lg_manche_courte"/>
+        <variable description="Rétrécissement du bas de la manche courte, de chaque côté" formula="1" name="#retrait_mc"/>
+        <variable description="Excédent de demi-poitrine sur demi-taille (exemple: 6)" formula="(bust_circ + #ais_poitrine - waist_circ) /2" name="#exc_taille"/>
+        <variable description="Excédent de demi-bassin sur demi-poitrine (exemple: 1)" formula="(hip_circ - bust_circ - #ais_poitrine) /2" name="#exc_bassin"/>
+    </variables>
+    <draftBlock name="Buste">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="A" showPointName="true" type="single" x="0.79375" y="1.05833"/>
+            <point angle="270" basePoint="1" id="2" length="neck_back_to_highbust_b + #ais_emm" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="1" id="3" length="neck_back_to_waist_b" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A2" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="3" id="4" length="waist_to_hip_side" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A3" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="2" id="5" length="across_back_b/2 + #ais_carrure" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="B1" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="2" id="6" length="(bust_circ + #ais_poitrine)/2" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="B2" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="6" id="7" length="across_chest_f/2 + #ais_carrure" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="C1" showPointName="true" type="endLine"/>
+            <point firstPoint="5" id="8" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="D1" secondPoint="7" showPointName="true" type="alongLine"/>
+            <point angle="90" basePoint="5" id="9" length="Line_A_A1*4/9" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.345975" my="-0.803827" name="B5" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="7" id="10" length="Line_A_A1/3" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.399395" my="-0.75041" name="C5" showPointName="true" type="endLine"/>
+            <point firstPoint="6" id="11" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="B3" secondPoint="3" showPointName="true" type="intersectXY"/>
+            <point firstPoint="6" id="12" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="B4" secondPoint="4" showPointName="true" type="intersectXY"/>
+            <point angle="0" basePoint="1" id="13" length="neck_circ/5 - #corr_cou" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="E1" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="13" id="14" length="Line_A_E1/3" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="E2" showPointName="true" type="endLine"/>
+            <point angle="360 - #pente_epaule" basePoint="14" id="15" length="shoulder_length + #embu_dos" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.345978" my="0.371428" name="F2" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="6" id="16" length="Line_A_A1 + #bascule_dev" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="G1" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="16" id="17" length="Line_A_E1" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="G2" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="16" id="18" length="Line_A_E1 + #creux_dev" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="G3" showPointName="true" type="endLine"/>
+            <point angle="180 + #pente_epaule" basePoint="17" id="19" length="shoulder_length" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="H2" showPointName="true" type="endLine"/>
+            <spline angle1="0" angle2="AngleLine_E2_F2 - 90" color="black" id="20" length="8.43486" length1="Line_A_E1*3/5" length2="Line_E1_E2/2" lineWeight="0.35" penStyle="solidLine" point1="1" point4="14" type="simpleInteractive"/>
+            <spline angle1="AngleLine_G2_H2 + 90" angle2="180" color="black" id="21" length="11.4794" length1="Line_G1_G3/2" length2="Line_G1_G2*3/5" lineWeight="0.35" penStyle="solidLine" point1="17" point4="18" type="simpleInteractive"/>
+            <spline color="black" id="22" lineWeight="0.35" penStyle="solidLine" type="pathInteractive">
+                <pathPoint angle1="70" angle2="AngleLine_E2_F2 - 90" length1="0" length2="Line_B1_B5/3" pSpline="15"/>
+                <pathPoint angle1="90" angle2="270" length1="Line_B1_B5/3 " length2="Line_B1_B5/2" pSpline="9"/>
+                <pathPoint angle1="180" angle2="0" length1="Line_B1_D1*3/4" length2="1.28095" pSpline="8"/>
+            </spline>
+            <spline color="black" id="23" lineWeight="0.35" penStyle="solidLine" type="pathInteractive">
+                <pathPoint angle1="110" angle2="AngleLine_G2_H2 + 90" length1="0" length2="Line_B1_B5/3" pSpline="19"/>
+                <pathPoint angle1="90" angle2="270" length1="Line_B1_B5/3" length2="Line_C1_C5/2" pSpline="10"/>
+                <pathPoint angle1="0" angle2="180" length1="Line_D1_C1*3/4" length2="1.67613" pSpline="8"/>
+            </spline>
+            <point angle="0" basePoint="3" id="24" length="Line_A1_B1 + Line_B1_D1 - #exc_taille/4" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="D4" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="11" id="25" length="Line_B2_C1 + Line_D1_C1 - #exc_taille/4" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="D5" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="4" id="26" length="Line_A1_B1 + Line_B1_D1 + #exc_bassin/2 + #ais_bassin/4" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="-1.52767" my="0.483165" name="D6" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="12" id="27" length="Line_B2_C1 + Line_D1_C1 + #exc_bassin/2 + #ais_bassin/4" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="-0.283232" my="0.536081" name="D7" showPointName="true" type="endLine"/>
+            <line firstPoint="8" id="28" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="24"/>
+            <line firstPoint="24" id="29" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="26"/>
+            <line firstPoint="8" id="30" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="25"/>
+            <line firstPoint="25" id="31" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="27"/>
+        </calculation>
+        <modeling>
+            <point id="49" idObject="26" inUse="true" mx="0.218582" my="0.350873" showPointName="true" type="modeling"/>
+            <point id="50" idObject="4" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="51" idObject="1" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="52" idObject="20" inUse="true" type="modelingSpline"/>
+            <point id="53" idObject="15" inUse="true" mx="0.345978" my="0.371428" showPointName="true" type="modeling"/>
+            <spline id="54" idObject="22" inUse="true" type="modelingPath"/>
+            <point id="55" idObject="24" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="57" idObject="17" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="58" idObject="21" inUse="true" type="modelingSpline"/>
+            <point id="59" idObject="18" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="60" idObject="12" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="61" idObject="27" inUse="true" mx="-1.42094" my="0.350873" showPointName="true" type="modeling"/>
+            <point id="62" idObject="25" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="63" idObject="8" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="64" idObject="23" inUse="true" type="modelingPath"/>
+            <point id="65" idObject="19" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="81" idObject="9" inUse="true" type="anchor"/>
+            <point id="82" idObject="10" inUse="true" type="anchor"/>
+        </modeling>
+        <pieces>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="56" inLayout="true" locked="false" mx="0" my="0" name="Demi-dos" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Left/Right" fontSize="0" height="2" letter="" mx="738.661" my="1229.92" onFold="true" orientation="Right" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="228.425" my="1229.92" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="540.236" my="1318.12" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="49" type="NodePoint"/>
+                    <node idObject="50" type="NodePoint"/>
+                    <node idObject="51" type="NodePoint"/>
+                    <node idObject="52" reverse="0" type="NodeSpline"/>
+                    <node idObject="53" type="NodePoint"/>
+                    <node idObject="54" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="55" type="NodePoint"/>
+                </nodes>
+                <anchors>
+                    <record>81</record>
+                </anchors>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="66" inLayout="true" locked="false" mx="0" my="0" name="Demi-devant" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Left/Right" fontSize="0" height="2" letter="" mx="1692.99" my="1258.9" onFold="true" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="1201.65" my="1258.9" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="1504.02" my="1347.09" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="57" type="NodePoint"/>
+                    <node idObject="58" reverse="0" type="NodeSpline"/>
+                    <node idObject="59" type="NodePoint"/>
+                    <node idObject="60" type="NodePoint"/>
+                    <node idObject="61" type="NodePoint"/>
+                    <node idObject="62" type="NodePoint"/>
+                    <node idObject="63" type="NodePoint"/>
+                    <node idObject="64" reverse="1" type="NodeSplinePath"/>
+                    <node idObject="65" type="NodePoint"/>
+                </nodes>
+                <anchors>
+                    <record>82</record>
+                </anchors>
+            </piece>
+        </pieces>
+        <groups/>
+        <images/>
+    </draftBlock>
+    <draftBlock name="Manche">
+        <calculation>
+            <point id="32" mx="-0.480816" my="-2.00331" name="M" showPointName="true" type="single" x="80" y="0"/>
+            <point angle="270" basePoint="32" id="33" length="(SplPath_F2_D1 + SplPath_H2_D1)/#div_tete" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="32" id="34" length="arm_shoulder_tip_to_wrist" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M2" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="32" id="35" length="arm_shoulder_tip_to_elbow" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M3" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="33" id="36" length="sqrt((SplPath_F2_D1*#k_tete_dos)^2 - Line_M_M1^2)" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M4" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="33" id="37" length="sqrt((SplPath_H2_D1*#k_tete_dev)^2 - Line_M_M1^2)" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M5" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="34" id="38" length="(arm_wrist_circ + #ais_poignet)/2" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M6" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="34" id="39" length="(arm_wrist_circ + #ais_poignet)/2" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M7" showPointName="true" type="endLine"/>
+            <spline angle1="0" angle2="180" color="black" id="40" length="22.7936" length1="Line_M1_M4/3" length2="Line_M1_M4/2" lineWeight="0.35" penStyle="solidLine" point1="36" point4="32" type="simpleInteractive"/>
+            <spline angle1="0" angle2="180" color="black" id="41" length="21.4122" length1="Line_M1_M5/2" length2="Line_M1_M5/2" lineWeight="0.35" penStyle="solidLine" point1="32" point4="37" type="simpleInteractive"/>
+            <line firstPoint="36" id="42" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="38"/>
+            <line firstPoint="37" id="43" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="39"/>
+            <point angle="270" basePoint="32" id="44" length="#lg_manche_courte" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M8" showPointName="true" type="endLine"/>
+            <point angle="180" basePoint="44" id="45" length="Line_M1_M4 - #retrait_mc" lineColor="blue" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M9" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="44" id="46" length="Line_M1_M5 - #retrait_mc" lineColor="blue" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="M10" showPointName="true" type="endLine"/>
+            <line firstPoint="36" id="47" lineColor="blue" lineType="solidLine" lineWeight="0.35" secondPoint="45"/>
+            <line firstPoint="37" id="48" lineColor="blue" lineType="solidLine" lineWeight="0.35" secondPoint="46"/>
+        </calculation>
+        <modeling>
+            <point id="67" idObject="36" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="68" idObject="40" inUse="true" type="modelingSpline"/>
+            <spline id="69" idObject="41" inUse="true" type="modelingSpline"/>
+            <point id="70" idObject="37" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="71" idObject="39" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="72" idObject="38" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="74" idObject="36" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="75" idObject="40" inUse="true" type="modelingSpline"/>
+            <spline id="76" idObject="41" inUse="true" type="modelingSpline"/>
+            <point id="77" idObject="46" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="78" idObject="45" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+        </modeling>
+        <pieces>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="73" inLayout="false" locked="false" mx="0" my="0" name="Manche longue" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Undefined" fontSize="0" height="2" letter="" mx="3082.38" my="1190.55" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="2418.98" my="1190.55" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="2807.37" my="1278.75" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="67" type="NodePoint"/>
+                    <node idObject="68" reverse="0" type="NodeSpline"/>
+                    <node idObject="69" reverse="0" type="NodeSpline"/>
+                    <node idObject="70" type="NodePoint"/>
+                    <node idObject="71" type="NodePoint"/>
+                    <node idObject="72" type="NodePoint"/>
+                </nodes>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="79" inLayout="false" locked="false" mx="0" my="0" name="Manche courte" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Undefined" fontSize="0" height="2" letter="" mx="3082.38" my="377.953" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="2418.98" my="377.953" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="5" mx="2807.37" my="466.148" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="74" type="NodePoint"/>
+                    <node idObject="75" reverse="0" type="NodeSpline"/>
+                    <node idObject="76" reverse="0" type="NodeSpline"/>
+                    <node idObject="77" type="NodePoint"/>
+                    <node idObject="78" type="NodePoint"/>
+                </nodes>
+            </piece>
+        </pieces>
+        <groups/>
+        <images/>
+    </draftBlock>
+</pattern>

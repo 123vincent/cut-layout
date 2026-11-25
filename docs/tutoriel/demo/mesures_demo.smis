@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smis>
+    <!--Mesures FICTIVES pour le tutoriel de CutLayout (aucune personne réelle).-->
+    <version>0.3.4</version>
+    <read-only>false</read-only>
+    <notes>Mesures fictives du tutoriel CutLayout</notes>
+    <unit>cm</unit>
+    <pm_system>998</pm_system>
+    <personal>
+        <family-name/>
+        <given-name/>
+        <birth-date>1800-01-01</birth-date>
+        <gender>unknown</gender>
+        <email/>
+    </personal>
+    <body-measurements>
+        <m name="waist_circ" value="70"/>
+        <m name="hip_circ" value="96"/>
+        <m name="waist_to_hip_b" value="20"/>
+        <m name="waist_to_knee_b" value="58"/>
+    </body-measurements>
+</smis>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Patron de démonstration du tutoriel CutLayout : jupe droite simplifiée, mesures fictives.-->
+    <version>0.7.6</version>
+    <unit>cm</unit>
+    <description>Jupe droite de démonstration (tutoriel CutLayout)</description>
+    <notes/>
+    <measurements>mesures_demo.smis</measurements>
+    <variables>
+        <variable description="Aisance totale au bassin" formula="4" name="#ais_bassin"/>
+        <variable description="Valeur de pince reportée au côté (par quart)" formula="2" name="#pince"/>
+        <variable description="Remontée du côté à la taille" formula="1.5" name="#remontee"/>
+        <variable description="Croisure de la ceinture" formula="3" name="#croisure"/>
+        <variable description="Hauteur de la ceinture finie" formula="4" name="#ceinture"/>
+    </variables>
+    <draftBlock name="Jupe">
+        <calculation>
+            <!-- devant : milieu devant A-A1 (au pli) -->
+            <point id="1" mx="0.13" my="0.26" name="A" showPointName="true" type="single" x="0" y="0"/>
+            <point angle="270" basePoint="1" id="2" length="waist_to_knee_b" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="A1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="1" id="3" length="waist_to_hip_b" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="A2" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="3" id="4" length="(hip_circ + #ais_bassin)/4" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="A3" showPointName="true" type="endLine"/>
+            <point firstPoint="4" id="5" lineColor="black" lineType="solidLine" mx="0.13" my="0.26" name="A4" secondPoint="2" showPointName="true" type="intersectXY"/>
+            <point angle="atanD(#remontee/(waist_circ/4 + #pince))" basePoint="1" id="6" length="waist_circ/4 + #pince" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="A5" showPointName="true" type="endLine"/>
+            <spline angle1="275" angle2="90" color="black" id="7" length1="Line_A5_A3/3" length2="Line_A5_A3/3" lineWeight="0.35" penStyle="solidLine" point1="6" point4="4" type="simpleInteractive"/>
+            <!-- dos : milieu dos B-B1, couture -->
+            <point id="8" mx="0.13" my="0.26" name="B" showPointName="true" type="single" x="40" y="0"/>
+            <point angle="270" basePoint="8" id="9" length="waist_to_knee_b" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="B1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="8" id="10" length="waist_to_hip_b" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="B2" showPointName="true" type="endLine"/>
+            <point angle="0" basePoint="10" id="11" length="(hip_circ + #ais_bassin)/4" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="B3" showPointName="true" type="endLine"/>
+            <point firstPoint="11" id="12" lineColor="black" lineType="solidLine" mx="0.13" my="0.26" name="B4" secondPoint="9" showPointName="true" type="intersectXY"/>
+            <point angle="atanD(#remontee/(waist_circ/4 + #pince + 1))" basePoint="8" id="13" length="waist_circ/4 + #pince + 1" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="B5" showPointName="true" type="endLine"/>
+            <spline angle1="275" angle2="90" color="black" id="14" length1="Line_B5_B3/3" length2="Line_B5_B3/3" lineWeight="0.35" penStyle="solidLine" point1="13" point4="11" type="simpleInteractive"/>
+            <!-- ceinture : rectangle -->
+            <point id="15" mx="0.13" my="0.26" name="C" showPointName="true" type="single" x="0" y="80"/>
+            <point angle="0" basePoint="15" id="16" length="waist_circ + #croisure" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="C1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="16" id="17" length="2*#ceinture" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="C2" showPointName="true" type="endLine"/>
+            <point firstPoint="15" id="18" lineColor="black" lineType="solidLine" mx="0.13" my="0.26" name="C3" secondPoint="17" showPointName="true" type="intersectXY"/>
+            <!-- poche plaquée à fond arrondi -->
+            <point id="19" mx="0.13" my="0.26" name="P" showPointName="true" type="single" x="80" y="0"/>
+            <point angle="0" basePoint="19" id="20" length="16" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="P1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="20" id="21" length="14" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="P2" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="19" id="22" length="14" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.13" my="0.26" name="P3" showPointName="true" type="endLine"/>
+            <point firstPoint="22" id="23" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.13" my="0.26" name="P4" secondPoint="21" showPointName="true" type="alongLine"/>
+            <point angle="270" basePoint="23" id="24" length="3" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.13" my="0.26" name="P5" showPointName="true" type="endLine"/>
+            <spline color="black" id="25" lineWeight="0.35" penStyle="solidLine" type="pathInteractive">
+                <pathPoint angle1="90" angle2="270" length1="0" length2="2" pSpline="21"/>
+                <pathPoint angle1="0" angle2="180" length1="5" length2="5" pSpline="24"/>
+                <pathPoint angle1="270" angle2="90" length1="2" length2="0" pSpline="22"/>
+            </spline>
+            <line firstPoint="23" id="26" lineColor="black" lineType="dashLine" lineWeight="0.35" secondPoint="24"/>
+        </calculation>
+        <modeling>
+            <point id="30" idObject="1" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="31" idObject="6" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <spline id="32" idObject="7" inUse="true" type="modelingSpline"/>
+            <point id="33" idObject="5" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="34" idObject="2" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="35" idObject="8" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="36" idObject="13" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <spline id="37" idObject="14" inUse="true" type="modelingSpline"/>
+            <point id="38" idObject="12" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="39" idObject="9" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="40" idObject="15" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="41" idObject="16" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="42" idObject="17" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="43" idObject="18" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="44" idObject="19" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <point id="45" idObject="20" inUse="true" mx="0.13" my="0.26" showPointName="true" type="modeling"/>
+            <spline id="46" idObject="25" inUse="true" type="modelingPath"/>
+        </modeling>
+        <pieces>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="50" inLayout="true" locked="false" mx="0" my="0" name="Devant" seamAllowance="false" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Left/Right" fontSize="0" height="2" letter="" mx="0" my="0" onFold="true" orientation="Right" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="0" my="0" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="0" my="0" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="30" type="NodePoint"/>
+                    <node idObject="31" type="NodePoint"/>
+                    <node idObject="32" reverse="0" type="NodeSpline"/>
+                    <node idObject="33" type="NodePoint"/>
+                    <node idObject="34" type="NodePoint"/>
+                </nodes>
+                <anchors/>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="51" inLayout="true" locked="false" mx="0" my="0" name="Dos" seamAllowance="false" united="false" version="2" width="1">
+                <data annotation="" foldPosition="" fontSize="0" height="2" letter="" mx="0" my="0" onFold="false" orientation="Right" quantity="2" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="0" my="0" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="0" my="0" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="35" type="NodePoint"/>
+                    <node idObject="36" type="NodePoint"/>
+                    <node idObject="37" reverse="0" type="NodeSpline"/>
+                    <node idObject="38" type="NodePoint"/>
+                    <node idObject="39" type="NodePoint"/>
+                </nodes>
+                <anchors/>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="true" hideMainPath="false" id="52" inLayout="true" locked="false" mx="0" my="0" name="Ceinture" seamAllowance="false" united="false" version="2" width="1">
+                <data annotation="" foldPosition="" fontSize="0" height="2" letter="" mx="0" my="0" onFold="false" orientation="Right" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="0" my="0" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="0" my="0" rotation="0" visible="true"/>
+                <nodes>
+                    <node idObject="40" type="NodePoint"/>
+                    <node idObject="41" type="NodePoint"/>
+                    <node idObject="42" type="NodePoint"/>
+                    <node idObject="43" type="NodePoint"/>
+                </nodes>
+                <anchors/>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="53" inLayout="true" locked="false" mx="0" my="0" name="Poche" seamAllowance="false" united="false" version="2" width="1">
+                <data annotation="" foldPosition="" fontSize="0" height="2" letter="" mx="0" my="0" onFold="false" orientation="Right" quantity="2" rotation="0" rotationWay="None" tilt="None" visible="true" width="3"/>
+                <patternInfo fontSize="0" height="2" mx="0" my="0" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="10" mx="0" my="0" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="44" type="NodePoint"/>
+                    <node idObject="45" type="NodePoint"/>
+                    <node idObject="46" reverse="0" type="NodeSplinePath"/>
+                </nodes>
+                <anchors/>
+            </piece>
+        </pieces>
+        <groups/>
+        <images/>
+    </draftBlock>
+</pattern>

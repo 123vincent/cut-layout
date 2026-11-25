@@ -1,0 +1,845 @@
+# French translations for CutLayout.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the CutLayout
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CutLayout VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-25 12:18+0100\n"
+"PO-Revision-Date: 2026-11-24 13:13+0100\n"
+"Last-Translator: Vincent\n"
+"Language: fr\n"
+"Language-Team: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#. TRANSLATORS: strftime date format of the test page
+#, python-format
+msgid "%Y-%m-%d %H:%M"
+msgstr "%d.%m.%Y %H:%M"
+
+msgid "&About CutLayout…"
+msgstr "À &propos de CutLayout…"
+
+msgid "&Add pieces…"
+msgstr "&Ajouter des pièces…"
+
+msgid "&Dark theme"
+msgstr "Thème &sombre"
+
+msgid "&Edit"
+msgstr "É&dition"
+
+msgid "&Export PDF…"
+msgstr "&Exporter le PDF…"
+
+msgid "&File"
+msgstr "&Fichier"
+
+msgid "&Help"
+msgstr "&Aide"
+
+msgid "&Language"
+msgstr "&Langue"
+
+msgid "&Open a pattern…"
+msgstr "&Ouvrir un patron…"
+
+msgid "&Page setup…"
+msgstr "&Mise en page…"
+
+msgid "&Piece"
+msgstr "&Pièce"
+
+msgid "&Preferences…"
+msgstr "Pré&férences…"
+
+msgid "&Properties…"
+msgstr "&Propriétés…"
+
+msgid "&Quit"
+msgstr "&Quitter"
+
+#. TRANSLATORS: prefix of the menu entry, followed by the name of the action
+msgid "&Redo"
+msgstr "&Rétablir"
+
+msgid "&Reload preferences"
+msgstr "&Recharger les préférences"
+
+msgid "&Remove from layout"
+msgstr "&Retirer du plan"
+
+msgid "&Save the cutting layout"
+msgstr "&Enregistrer le plan de coupe"
+
+msgid "&Show all"
+msgstr "&Tout afficher"
+
+#. TRANSLATORS: prefix of the menu entry, followed by the name of the action
+#. (e.g. "Undo Move Demi-dos")
+msgid "&Undo"
+msgstr "&Annuler"
+
+msgid "&View"
+msgstr "&Affichage"
+
+#, python-brace-format
+msgid ""
+"1. Print at 100 % (“Actual size”), without “Fit to page”.\n"
+"2. Measure the rulers (x: {x} mm, y: {y} mm) or the cutting frame\n"
+"    ({frame}, between the dashed lines): the longest length is the most "
+"accurate.\n"
+"3. The dashed cutting frame must be printed entirely, on all four sides.\n"
+"4. On each edge, note the smallest line printed entirely (2 to 6 mm from "
+"the edge):\n"
+"    this is the non-printable area on that side. Set print_margin_mm to "
+"at least the\n"
+"    largest of the four values, and below the assembly margin.\n"
+"5. Scale error measured on a page WITHOUT correction: enter the expected "
+"and measured\n"
+"    lengths in the [printer] section of the preferences (File > "
+"Preferences)."
+msgstr ""
+"1. Imprimer à 100 % (« Taille réelle »), sans « Ajuster à la page ».\n"
+"2. Mesurer les règles (x : {x} mm, y : {y} mm) ou le cadre de coupe\n"
+"    ({frame}, entre les pointillés) : la plus grande longueur est la plus"
+" précise.\n"
+"3. Le cadre de coupe en pointillés doit être imprimé en entier, sur les "
+"quatre côtés.\n"
+"4. Sur chaque bord, noter le plus petit trait imprimé en entier (2 à 6 mm"
+" du bord) :\n"
+"    c'est la zone non imprimable de ce côté. Régler print_margin_mm au "
+"moins à la\n"
+"    plus grande des quatre valeurs, et en dessous de la marge "
+"d'assemblage.\n"
+"5. Écart d'échelle mesuré sur une page SANS correction : reporter les "
+"longueurs\n"
+"    attendue et mesurée dans la section [printer] des préférences "
+"(Fichier > Préférences)."
+
+msgid ""
+"A T mark is drawn at each checked node: its stem starts on the node, "
+"perpendicular to the outline, towards the inside of the piece."
+msgstr ""
+"Un repère en T est tracé à chaque nœud coché : sa tige part du nœud, "
+"perpendiculaire au contour, vers l'intérieur de la pièce."
+
+msgid "About CutLayout"
+msgstr "À propos de CutLayout"
+
+#, python-brace-format
+msgid "Add {names}"
+msgstr "Ajouter {names}"
+
+msgid "Also use as default for new layouts"
+msgstr "Utiliser aussi par défaut pour les nouveaux plans"
+
+msgid "Assembly margin (cutting frame)"
+msgstr "Marge d'assemblage (cadre de coupe)"
+
+msgid ""
+"Assembly margin, in mm: from the sheet edge to the cutting frame (dashed "
+"line).\n"
+"Sheets are cut along this frame and butted together. Default: 10"
+msgstr ""
+"Marge d'assemblage, en mm : du bord de la feuille au cadre de coupe "
+"(pointillés).\n"
+"Les feuilles sont découpées sur ce cadre puis jointes bout à bout. Défaut"
+" : 10"
+
+msgid "Assembly plan"
+msgstr "Plan de montage"
+
+msgid "Automatic (system language)"
+msgstr "Automatique (langue du système)"
+
+#, python-brace-format
+msgid ""
+"Bounding box on the layout: x {x0} to {x1} cm, y {y0} to {y1} cm ({w} × "
+"{h} cm)."
+msgstr ""
+"Boîte englobante sur le plan : x {x0} à {x1} cm, y {y0} à {y1} cm ({w} × "
+"{h} cm)."
+
+#, python-brace-format
+msgid "Cannot read the measurements path: {error}"
+msgstr "Lecture du chemin des mesures impossible : {error}"
+
+msgid "Cannot write the file:"
+msgstr "Écriture impossible :"
+
+msgid "Centroid (area)"
+msgstr "Barycentre (surface)"
+
+#, python-brace-format
+msgid "Change the properties of {name}"
+msgstr "Modifier les propriétés de {name}"
+
+msgid "Check the pieces to import (net outlines, without seam allowance):"
+msgstr "Cocher les pièces à importer (contours nets, sans marge de couture) :"
+
+msgid "Choose another…"
+msgstr "Choisir un autre…"
+
+msgid "Configuration"
+msgstr "Configuration"
+
+#, python-brace-format
+msgid "Configuration copied from {path}"
+msgstr "Configuration copiée depuis {path}"
+
+msgid "Configuration not applied:"
+msgstr "Configuration non appliquée :"
+
+#, python-brace-format
+msgid "Current pieces: {rows} × {cols} = {count} sheet."
+msgid_plural "Current pieces: {rows} × {cols} = {count} sheets."
+msgstr[0] "Pièces actuelles : {rows} × {cols} = {count} feuille."
+msgstr[1] "Pièces actuelles : {rows} × {cols} = {count} feuilles."
+
+msgid "Custom"
+msgstr "Personnalisé"
+
+#, python-brace-format
+msgid ""
+"Custom format only (format = custom): sheet width and height, in mm,\n"
+"from {min} to {max}. The short side is the width in portrait."
+msgstr ""
+"Format personnalisé seulement (format = custom) : largeur et hauteur de "
+"la feuille, en mm,\n"
+"de {min} à {max}. Le petit côté est la largeur en portrait."
+
+msgid "Custom size (width × height)"
+msgstr "Taille personnalisée (largeur × hauteur)"
+
+msgid ""
+"Cut each sheet along its dashed frame, then join the corners bearing the "
+"same letter."
+msgstr ""
+"Découper chaque feuille sur son cadre en pointillés, puis réunir les "
+"coins portant la même lettre."
+
+msgid ""
+"CutLayout preferences\n"
+"After editing: in the application, File > Reload preferences (F5).\n"
+"Lines starting with # are comments."
+msgstr ""
+"Préférences de CutLayout\n"
+"Après modification : dans l'application, Fichier > Recharger les "
+"préférences (F5).\n"
+"Les lignes qui commencent par # sont des commentaires."
+
+#, python-brace-format
+msgid "CutLayout — {pattern}  (measurements: {measurements})"
+msgstr "CutLayout — {pattern}  (mesures : {measurements})"
+
+#, python-brace-format
+msgid "Cutting layout ({pattern})"
+msgstr "Plan de coupe ({pattern})"
+
+#, python-brace-format
+msgid "Cutting layout saved: {path}"
+msgstr "Plan de coupe enregistré : {path}"
+
+#, python-brace-format
+msgid "Cutting layout — {name}"
+msgstr "Plan de coupe — {name}"
+
+msgid "Default values not saved:"
+msgstr "Valeurs par défaut non enregistrées :"
+
+msgid "Default values used."
+msgstr "Valeurs par défaut utilisées."
+
+#, python-brace-format
+msgid "Empty pages omitted: {omitted}."
+msgstr "Pages vides omises : {omitted}."
+
+msgid "Export PDF"
+msgstr "Exporter le PDF"
+
+msgid "First page: assembly plan (reduced, not to scale)."
+msgstr "Première page : plan de montage (réduit, pas à l'échelle)."
+
+msgid "Flipping is forbidden for this piece in the pattern (Seamly2D)."
+msgstr "Le retournement de cette pièce est interdit dans le patron (Seamly2D)."
+
+#, python-brace-format
+msgid ""
+"Format {sheet} · assembly margin {assembly} mm · print margin set to "
+"{print} mm · {date}"
+msgstr ""
+"Format {sheet} · marge d'assemblage {assembly} mm · marge d'impression "
+"réglée {print} mm · {date}"
+
+msgid "Import failed"
+msgstr "Import impossible"
+
+msgid "Individual measurements (*.smis)"
+msgstr "Mesures individuelles (*.smis)"
+
+#, python-brace-format
+msgid "Interface language: {choices}  (auto = system language; restart required)"
+msgstr ""
+"Langue de l'interface : {choices}  (auto = langue du système ; "
+"redémarrage nécessaire)"
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Language not saved:"
+msgstr "Langue non enregistrée :"
+
+#, python-brace-format
+msgid "Long side of the paper: {length} mm ruler (y)"
+msgstr "Grand côté du papier : règle de {length} mm (y)"
+
+msgid "Marked nodes (T)"
+msgstr "Nœuds marqués (T)"
+
+msgid "Marks removed:"
+msgstr "Repères retirés :"
+
+msgid "Measurements"
+msgstr "Mesures"
+
+msgid "Measurements file"
+msgstr "Fichier de mesures"
+
+msgid "Mirror"
+msgstr "Symétrie"
+
+msgid "Mirror (vertical axis through the reference point)"
+msgstr "Retourner (axe vertical passant par le point de référence)"
+
+#, python-brace-format
+msgid ""
+"Modified since the cutting layout was saved:\n"
+"{files}\n"
+"\n"
+"The pieces will be recomputed from the current files, at the saved "
+"positions. Check them (overlaps are shown in colour).\n"
+"\n"
+"Open anyway?"
+msgstr ""
+"Modifié(s) depuis l'enregistrement du plan de coupe :\n"
+"{files}\n"
+"\n"
+"Les pièces seront recalculées depuis les fichiers actuels, aux positions "
+"enregistrées. Vérifiez-les (les chevauchements sont signalés en couleur)."
+"\n"
+"\n"
+"Ouvrir quand même ?"
+
+#, python-brace-format
+msgid "Move {name}"
+msgstr "Déplacer {name}"
+
+msgid "No piece on the layout."
+msgstr "Aucune pièce sur le plan."
+
+#, python-brace-format
+msgid "Node {name}"
+msgstr "Nœud {name}"
+
+msgid "OUTSIDE THE LAYOUT (negative x or y)"
+msgstr "HORS DU PLAN (x ou y négatif)"
+
+#, python-brace-format
+msgid "OVERLAPS {names}"
+msgstr "CHEVAUCHE {names}"
+
+msgid "Open a Seamly2D pattern"
+msgstr "Ouvrir un patron Seamly2D"
+
+msgid "Open a cutting &layout…"
+msgstr "Ouvrir un &plan de coupe…"
+
+msgid "Open a cutting layout"
+msgstr "Ouvrir un plan de coupe"
+
+msgid "Open a pattern"
+msgstr "Ouvrir un patron"
+
+msgid "Open the PDF"
+msgstr "Ouvrir le PDF"
+
+msgid "Orientation"
+msgstr "Orientation"
+
+#, python-brace-format
+msgid ""
+"Overlapping pieces: {names}\n"
+"\n"
+"Export anyway?"
+msgstr ""
+"Pièces qui se chevauchent : {names}\n"
+"\n"
+"Exporter quand même ?"
+
+#. TRANSLATORS: menu of the menu bar; its mnemonic must differ from File, Edit,
+#. Piece, View
+msgid "Page &setup"
+msgstr "&Mise en page"
+
+msgid "Page setup"
+msgstr "Mise en page"
+
+msgid "Part of the piece is outside the layout (negative x or y)."
+msgstr "Une partie de la pièce est hors du plan (x ou y négatif)."
+
+#, python-brace-format
+msgid ""
+"Piece(s) partly outside the layout (negative x or y): {names}\n"
+"The part outside the layout will not be printed.\n"
+"\n"
+"Export anyway?"
+msgstr ""
+"Pièce(s) en partie hors du plan (x ou y négatif) : {names}\n"
+"La partie hors du plan ne sera pas imprimée.\n"
+"\n"
+"Exporter quand même ?"
+
+msgid "Pieces not placed:"
+msgstr "Pièces non placées :"
+
+msgid "Pieces to import"
+msgstr "Pièces à importer"
+
+#, python-brace-format
+msgid "Preferences: {path}"
+msgstr "Préférences : {path}"
+
+msgid "Print at 100 % (actual size)."
+msgstr "Imprimer à 100 % (taille réelle)."
+
+msgid "Print margin (printer)"
+msgstr "Marge d'impression (imprimante)"
+
+msgid "Print margin not applied to this layout:"
+msgstr "Marge d'impression non appliquée à ce plan :"
+
+msgid "Print margin of the preferences not applied to this layout:"
+msgstr "Marge d'impression des préférences non appliquée à ce plan :"
+
+msgid ""
+"Print margin, in mm: non-printable area of the printer, from the edge.\n"
+"Must be smaller than the assembly margin. Default: 5 (measure it with the"
+" test page)"
+msgstr ""
+"Marge d'impression, en mm : zone non imprimable de l'imprimante, depuis "
+"le bord.\n"
+"Doit être inférieure à la marge d'assemblage. Défaut : 5 (à mesurer avec "
+"la page d'essai)"
+
+msgid "Printable 1:1 cutting layout for Seamly2D patterns."
+msgstr "Plan de coupe imprimable à l'échelle 1:1 pour patrons Seamly2D."
+
+#, python-brace-format
+msgid "Printed with: {correction}"
+msgstr "Imprimée avec : {correction}"
+
+msgid "Printer &test page (without correction)…"
+msgstr "Page d'&essai d'imprimante (sans correction)…"
+
+msgid ""
+"Printer scale correction. Measure on a test page printed WITHOUT "
+"correction\n"
+"(Page setup > Printer test page, without correction), then enter for each"
+" axis\n"
+"the expected length and the measured length, in mm:\n"
+"  x = short side of the paper, y = long side of the paper (in portrait "
+"and landscape).\n"
+"  Possible lengths: rulers (180 in x, 260 in y) or the cutting frame\n"
+"  (A4: 190 in x, 277 in y). The longest length gives the most accurate "
+"correction.\n"
+"Expected = measured: no correction. Correction limited to ±5 %."
+msgstr ""
+"Correction d'échelle de l'imprimante. Mesurer sur une page d'essai "
+"imprimée SANS correction\n"
+"(Mise en page > Page d'essai d'imprimante, sans correction), puis "
+"indiquer pour chaque axe\n"
+"la longueur attendue (expected) et la longueur mesurée (measured), en mm "
+":\n"
+"  x = petit côté du papier, y = grand côté du papier (en portrait comme "
+"en paysage).\n"
+"  Longueurs possibles : règles (180 en x, 260 en y) ou cadre de coupe\n"
+"  (A4 : 190 en x, 277 en y). La plus grande longueur donne la correction "
+"la plus précise.\n"
+"Attendue = mesurée : pas de correction. Correction limitée à ±5 %."
+
+msgid "Printer test page"
+msgstr "Page d'essai d'imprimante"
+
+msgid "Printer test page (with &correction)…"
+msgstr "Page d'essai d'imprimante (avec &correction)…"
+
+msgid "Printer test page — CutLayout"
+msgstr "Page d'essai d'imprimante — CutLayout"
+
+#, python-brace-format
+msgid "Printer: {correction}."
+msgstr "Imprimante : {correction}."
+
+msgid "Properties"
+msgstr "Propriétés"
+
+#, python-brace-format
+msgid "Properties — {name}"
+msgstr "Propriétés — {name}"
+
+msgid "Quit"
+msgstr "Quitter"
+
+msgid "Reference point"
+msgstr "Point de référence"
+
+msgid "Remove the pieces already imported from the layout?"
+msgstr "Retirer les pièces déjà importées du plan ?"
+
+#, python-brace-format
+msgid "Remove {names}"
+msgstr "Retirer {names}"
+
+msgid "Rotation (counterclockwise +)"
+msgstr "Rotation (antihoraire +)"
+
+#. TRANSLATORS: page mark printed on each sheet, R = row, C = column (French: L
+#. = ligne)
+#, python-brace-format
+msgid "R{row}-C{col}"
+msgstr "L{row}-C{col}"
+
+msgid "Save the cutting layout"
+msgstr "Enregistrer le plan de coupe"
+
+msgid "Save the cutting layout &as…"
+msgstr "Enregistrer le plan de coupe &sous…"
+
+#, python-brace-format
+msgid "Scale 1:{ratio} — do not measure on this page"
+msgstr "Échelle 1:{ratio} — ne pas mesurer sur cette page"
+
+#, python-brace-format
+msgid "Screen theme: {choices}  (the PDF is always black on white)"
+msgstr "Thème de l'écran : {choices}  (le PDF reste toujours noir sur blanc)"
+
+msgid "Seamly2D pattern (*.sm2d)"
+msgstr "Patron Seamly2D (*.sm2d)"
+
+msgid "Select a piece (click), or double-click it."
+msgstr "Sélectionnez une pièce (clic), ou double-cliquez dessus."
+
+msgid "Sheet format"
+msgstr "Format de feuille"
+
+#, python-brace-format
+msgid "Sheet format: {choices}"
+msgstr "Format de la feuille : {choices}"
+
+#, python-brace-format
+msgid "Sheet orientation: {choices}"
+msgstr "Orientation de la feuille : {choices}"
+
+#, python-brace-format
+msgid "Sheet {W} × {H} cm, cutting frame {w} × {h} cm."
+msgstr "Feuille {W} × {H} cm, cadre de coupe {w} × {h} cm."
+
+#, python-brace-format
+msgid "Short side of the paper: {length} mm ruler (x)"
+msgstr "Petit côté du papier : règle de {length} mm (x)"
+
+#, python-brace-format
+msgid ""
+"Test page {sheet} saved ({correction}).\n"
+"\n"
+"Print at 100 % (actual size), then follow the instructions on the page."
+msgstr ""
+"Page d'essai {sheet} enregistrée ({correction}).\n"
+"\n"
+"Imprimer à 100 % (taille réelle), puis suivre les consignes de la page."
+
+msgid "The cutting layout has unsaved changes. Save them?"
+msgstr "Le plan de coupe a des modifications non enregistrées. Les enregistrer ?"
+
+msgid "The language will change at the next start."
+msgstr "La langue changera au prochain démarrage."
+
+#, python-brace-format
+msgid ""
+"The measurements file declared by the pattern was not found:\n"
+"{path}\n"
+"\n"
+"Choose the .smis file to use."
+msgstr ""
+"Le fichier de mesures déclaré par le patron est introuvable :\n"
+"{path}\n"
+"\n"
+"Choisissez le fichier .smis à utiliser."
+
+#, python-brace-format
+msgid ""
+"The pattern uses the measurements:\n"
+"{path}\n"
+"\n"
+"Use this file?"
+msgstr ""
+"Le patron utilise les mesures :\n"
+"{path}\n"
+"\n"
+"Utiliser ce fichier ?"
+
+msgid "Theme applied but not saved:"
+msgstr "Thème appliqué mais non enregistré :"
+
+msgid "Unit"
+msgstr "Unité"
+
+msgid "Use"
+msgstr "Utiliser"
+
+#, python-brace-format
+msgid "[{block}] curve {object}: unsupported type {type!r}"
+msgstr "[{block}] courbe {object} : type {type!r} non géré"
+
+#, python-brace-format
+msgid "[{block}] element <{tag}> {object}, type {type!r}: not supported"
+msgstr "[{block}] élément <{tag}> {object}, type {type!r} : non géré"
+
+#, python-brace-format
+msgid ""
+"[{block}] piece {piece!r}: unsupported node attribute(s) {attributes} "
+"(effect on the outline UNKNOWN)"
+msgstr ""
+"[{block}] pièce {piece!r} : attribut(s) de nœud non géré(s) {attributes} "
+"(effet sur le contour INCONNU)"
+
+#, python-brace-format
+msgid "[{block}] piece {piece!r}: unsupported node type {type!r}"
+msgstr "[{block}] pièce {piece!r} : nœud de type {type!r} non géré"
+
+#, python-brace-format
+msgid "[{block}] point {object}: unsupported type {type!r}"
+msgstr "[{block}] point {object} : type {type!r} non géré"
+
+#, python-brace-format
+msgid "[{block}] {object}: unknown function {function!r} in {formula!r}"
+msgstr "[{block}] {object} : fonction inconnue {function!r} dans {formula!r}"
+
+#, python-brace-format
+msgid "[{section}] unknown key(s): {names} (known: {known})"
+msgstr "[{section}] clé(s) inconnue(s) : {names} (connues : {known})"
+
+msgid "already imported"
+msgstr "déjà importée"
+
+msgid "assembly margin too large for the sheet format"
+msgstr "marge d'assemblage trop grande pour le format"
+
+#, python-brace-format
+msgid "cannot compute the pattern: {error_type}: {error}"
+msgstr "calcul du patron impossible : {error_type} : {error}"
+
+#, python-brace-format
+msgid "cell {label} outside the {rows} × {cols} grid"
+msgstr "cellule {label} hors de la grille {rows} × {cols}"
+
+msgid "centroid"
+msgstr "barycentre"
+
+#, python-brace-format
+msgid "custom format: each side must be between {min} and {max} mm"
+msgstr "format personnalisé : chaque côté doit mesurer entre {min} et {max} mm"
+
+#, python-brace-format
+msgid "custom {w} × {h} mm {orientation}"
+msgstr "personnalisé {w} × {h} mm {orientation}"
+
+#. TRANSLATORS: suffix of the exported PDF file name, no spaces
+msgid "cutting_layout"
+msgstr "plan_de_coupe"
+
+#, python-brace-format
+msgid "different units: pattern {pattern!r}, measurements {measurements!r}"
+msgstr "unités différentes : patron {pattern!r}, mesures {measurements!r}"
+
+#, python-brace-format
+msgid "duplicate piece name: {name!r}"
+msgstr "nom de pièce en double : {name!r}"
+
+msgid "file(s) not found:"
+msgstr "fichier(s) introuvable(s) :"
+
+#, python-brace-format
+msgid "invalid cutting layout file: {error}"
+msgstr "fichier de plan de coupe non valide : {error}"
+
+msgid "landscape"
+msgstr "paysage"
+
+msgid "mirrored"
+msgstr "retournée"
+
+msgid "no scale correction"
+msgstr "aucune correction d'échelle"
+
+msgid "none"
+msgstr "aucune"
+
+msgid "on fold"
+msgstr "au pli"
+
+msgid "portrait"
+msgstr "portrait"
+
+#, python-brace-format
+msgid "scale correction x × {fx}, y × {fy}"
+msgstr "correction d'échelle x × {fx}, y × {fy}"
+
+#. TRANSLATORS: parts of the test page file name, no spaces
+msgid "test_page"
+msgstr "page_essai"
+
+msgid "the grid needs at least one row and one column"
+msgstr "la grille doit avoir au moins une ligne et une colonne"
+
+#, python-brace-format
+msgid ""
+"the print margin ({print} mm) must be smaller than the assembly margin "
+"({assembly} mm)"
+msgstr ""
+"la marge d'impression ({print} mm) doit être inférieure à la marge "
+"d'assemblage ({assembly} mm)"
+
+msgid "the print margin cannot be negative"
+msgstr "la marge d'impression ne peut pas être négative"
+
+#, python-brace-format
+msgid "unknown format: {value!r} (possible: {choices})"
+msgstr "format inconnu : {value!r} (possibles : {choices})"
+
+#, python-brace-format
+msgid "unknown node for {piece!r}: {node!r}"
+msgstr "nœud inconnu pour {piece!r} : {node!r}"
+
+#, python-brace-format
+msgid "unknown orientation: {value!r} (possible: {choices})"
+msgstr "orientation inconnue : {value!r} (possibles : {choices})"
+
+#, python-brace-format
+msgid "unknown reference point for {piece!r}: {ref!r}"
+msgstr "point de référence inconnu pour {piece!r} : {ref!r}"
+
+#, python-brace-format
+msgid "unknown section(s): {names} (known: {known})"
+msgstr "section(s) inconnue(s) : {names} (connues : {known})"
+
+#, python-brace-format
+msgid "unreadable XML file: {error}"
+msgstr "fichier XML illisible : {error}"
+
+#, python-brace-format
+msgid "unreadable cutting layout file: {error}"
+msgstr "fichier de plan de coupe illisible : {error}"
+
+msgid "unsupported content:"
+msgstr "contenu non géré :"
+
+#, python-brace-format
+msgid "unsupported cutting layout file version: {version!r}"
+msgstr "version de fichier de plan de coupe non gérée : {version!r}"
+
+#, python-brace-format
+msgid "unsupported unit: {unit!r} (supported: {supported})"
+msgstr "unité non gérée : {unit!r} (gérées : {supported})"
+
+#, python-brace-format
+msgid "variable {name}: unknown function {function!r} in {formula!r}"
+msgstr "variable {name} : fonction inconnue {function!r} dans {formula!r}"
+
+msgid "with_correction"
+msgstr "avec_correction"
+
+msgid "without_correction"
+msgstr "sans_correction"
+
+msgid "x from the origin"
+msgstr "x depuis l'origine"
+
+msgid "y from the origin"
+msgstr "y depuis l'origine"
+
+msgid "zero-area polygon: centroid undefined"
+msgstr "polygone d'aire nulle : barycentre non défini"
+
+#, python-brace-format
+msgid ""
+"{axis} correction of {percent} %: beyond ±{limit} %, check the lengths "
+"entered"
+msgstr ""
+"correction {axis} de {percent} % : au-delà de ±{limit} %, vérifier les "
+"longueurs saisies"
+
+#, python-brace-format
+msgid "{key}: must be positive ({value})"
+msgstr "{key} : doit être positif ({value})"
+
+#, python-brace-format
+msgid "{key}: number expected, got {value!r}"
+msgstr "{key} : nombre attendu, lu {value!r}"
+
+#, python-brace-format
+msgid "{key}: unknown value {value!r} (possible: {choices})"
+msgstr "{key} : valeur inconnue {value!r} (possibles : {choices})"
+
+#, python-brace-format
+msgid "{name}   ({width} × {height} cm)"
+msgstr "{name}   ({width} × {height} cm)"
+
+#, python-brace-format
+msgid "{name}: marked node(s) no longer in the pattern: {nodes}"
+msgstr "{name} : nœud(s) marqué(s) absent(s) du patron : {nodes}"
+
+#, python-brace-format
+msgid "{name}: no longer in the pattern"
+msgstr "{name} : n'existe plus dans le patron"
+
+#, python-brace-format
+msgid "{name}: {width} × {height} cm"
+msgstr "{name} : {width} × {height} cm"
+
+#, python-brace-format
+msgid "{n} page {sheet} exported, row by row from {first}."
+msgid_plural "{n} pages {sheet} exported, row by row from {first}."
+msgstr[0] "{n} page {sheet} exportée, ligne par ligne depuis {first}."
+msgstr[1] "{n} pages {sheet} exportées, ligne par ligne depuis {first}."
+
+#, python-brace-format
+msgid "{path}: unreadable file: {error}"
+msgstr "{path} : fichier illisible : {error}"
+
+#, python-brace-format
+msgid "{ref} at ({x}; {y}) cm, {angle}"
+msgstr "{ref} en ({x} ; {y}) cm, {angle}"
+
+#, python-brace-format
+msgid "{rows} × {cols} = {count} sheet {sheet} (frame {w} × {h} cm)"
+msgid_plural "{rows} × {cols} = {count} sheets {sheet} (frame {w} × {h} cm)"
+msgstr[0] "{rows} × {cols} = {count} feuille {sheet} (cadre {w} × {h} cm)"
+msgstr[1] "{rows} × {cols} = {count} feuilles {sheet} (cadre {w} × {h} cm)"
+
+#, python-brace-format
+msgid "{rows} × {cols} sheets {sheet}; grey: empty sheet, not printed."
+msgstr "{rows} × {cols} feuilles {sheet} ; en gris : feuille vide, non imprimée."
+
+#, python-brace-format
+msgid "{value} mm — set in File > Preferences"
+msgstr "{value} mm — réglée dans Fichier > Préférences"
+
