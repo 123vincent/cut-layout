@@ -46,7 +46,9 @@ Autres formats possibles si besoin : A0 à A2, US Letter / Legal, Tabloid et for
 
 ### Application portable (Windows)
 
-Dézipper `CutLayout-<version>-windows.zip` n'importe où, puis lancer `CutLayout\CutLayout.exe`. Aucune installation, pas besoin de Python. Windows 10 ou 11, 64 bits.
+**[⬇ Télécharger la dernière version](https://github.com/123vincent/cut-layout/releases/latest)** (fichier `CutLayout-<version>-windows.zip`).
+
+Dézipper le fichier n'importe où, puis lancer `CutLayout\CutLayout.exe`. Aucune installation, pas besoin de Python. Windows 10 ou 11, 64 bits.
 
 Les préférences sont enregistrées dans le compte de l'utilisateur : `~/.cut_layout/config.ini`.
 
